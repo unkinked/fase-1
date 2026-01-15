@@ -5,7 +5,7 @@
     <title>Listado de Equipos</title>
     <style>
         .mantenimiento {
-            background-color: #ffcccc;
+            background-color: #bd1010;
         }
     </style>
 </head>
