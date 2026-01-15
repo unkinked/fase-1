@@ -7,6 +7,7 @@ Route::get('/ping', function () {
     return response()->json(['pong' => true]);
 });
 
-Route::post('/equipos', [EquipoController::class, 'store']);
+Route::get('/equipos', [EquipoController::class, 'index']); 
+Route::post('/equipos', [EquipoController::class, 'store']); 
 Route::delete('/equipos/{id}', [EquipoController::class, 'destroy']);
-Route::get('/equipos', [EquipoController::class, 'index']);
+Route::get('/equipos/{id}/usuario', [EquipoController::class, 'usuario']); 
